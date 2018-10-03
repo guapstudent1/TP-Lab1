@@ -17,13 +17,13 @@ void SetFullname(char *fname)
 }
 char *GetFullname()
 {
-	return "Пупкин В.И";
+	return "РџСѓРїРєРёРЅ Р’.Р";
 }
 
 void SetGroupNumber(int n)
 {}
 int GetGroupNumber()
 {
-	// пустышка
+	// РїСѓСЃС‚С‹С€РєР°
 	return 0;
 }
