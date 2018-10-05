@@ -2,28 +2,38 @@
 
 Student::Student()
 {}
-Student::~Student()
-{}
 
-void SetMark(int index, int value)
-{}
-int GetMark(int index)
+void Student::SetMark(int index, int value)
 {
-	return 4;
+	mark[index] = value;
 }
 
-void SetFullname(char *fname)
+int Student::GetMark(int index)
 {
-}
-char *GetFullname()
-{
-	return "Пупкин В.И";
+	return mark[index];
 }
 
-void SetGroupNumber(int n)
-{}
-int GetGroupNumber()
+float Student::CalcAverage()
 {
-	// пустышка
-	return 0;
+	return float(mark[0] + mark[1] + mark[2] + mark[3] + mark[4]) / 5.0f;
+}
+
+void Student::SetFullname(string fname)
+{
+	fullname = fname;
+}
+
+string Student::GetFullname()
+{
+	return fullname;
+}
+
+void Student::SetGroup(int gnum)
+{
+	group = gnum;
+}
+
+int Student::GetGroup()
+{
+	return group;
 }

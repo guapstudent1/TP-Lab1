@@ -1,18 +1,22 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+
 class Student{
 	int group;
 	int mark[5];
-	char *fullname;
+	string fullname;
 	
 public: 
 	Student();
-	~Student();
+		
+	void SetMark(int, int);
+	int GetMark(int);
+	float CalcAverage();
 	
-	void SetMark(int index, int value);
-	int GetMark(int index);
+	void SetFullname(string);
+	string GetFullname();
 
-	void SetFullname(char *fname);
-	char *GetFullname();
-
-	void SetGroupNumber(int n);
-	int GetGroupNumber();
+	void SetGroup(int);
+	int GetGroup();
 };
